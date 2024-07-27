@@ -19,23 +19,48 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Weicheng Gao&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="1.ls命令：列出文件夹内容这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。 1ls    您可以使用长列表选项 ls -l 查看文件大小、权限、修改时间等详细信息。如果需要，您可以对这些选项进行排序和控制。 1ls -l   相关阅读：ls命令示例 2.cd命令：更改目录默认情况下，您从主目录开始。您经常需要更改目录并移动到另一个目录。 例如，您下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu基本命令">
+<meta property="og:url" content="http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Weicheng Gao&#39;s Blog">
+<meta property="og:description" content="1.ls命令：列出文件夹内容这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。 1ls    您可以使用长列表选项 ls -l 查看文件大小、权限、修改时间等详细信息。如果需要，您可以对这些选项进行排序和控制。 1ls -l   相关阅读：ls命令示例 2.cd命令：更改目录默认情况下，您从主目录开始。您经常需要更改目录并移动到另一个目录。 例如，您下">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ls-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/cd-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/cat-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/reading-large-files-with-less-command.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/touch-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/mkdir-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/cp-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/mv-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/rm-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/nano-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/list-processes-ubuntu.webp">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/top-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/grep-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/find-kill-process-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/taken-meme-find-you-kill-you.jpg">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/history-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/lshw-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/using-sudo-example-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ip-address-check-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ping-command-ubuntu.png">
+<meta property="article:published_time" content="2024-07-27T14:11:15.000Z">
+<meta property="article:modified_time" content="2024-07-27T14:17:05.120Z">
 <meta property="article:author" content="Weicheng Gao">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ls-command-ubuntu.png">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/","path":"2024/07/27/ubuntu基本命令/","title":"ubuntu基本命令"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Weicheng Gao's Blog</title>
+<title>ubuntu基本命令 | Weicheng Gao's Blog</title>
   
 
 
@@ -65,7 +90,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Weicheng Gao's Blog</h1>
+      <p class="site-title">Weicheng Gao's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -87,7 +112,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -100,6 +125,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-ls%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%97%E5%87%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">1.ls命令：列出文件夹内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-cd%E5%91%BD%E4%BB%A4%EF%BC%9A%E6%9B%B4%E6%94%B9%E7%9B%AE%E5%BD%95"><span class="nav-number">2.</span> <span class="nav-text">2.cd命令：更改目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-cat%E5%91%BD%E4%BB%A4%EF%BC%9A%E8%AF%BB%E5%8F%96%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">3. cat命令：读取文本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-less%E5%91%BD%E4%BB%A4%EF%BC%9A%E8%AF%BB%E5%8F%96%E5%A4%A7%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">4. less命令：读取大文本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-touch%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B6"><span class="nav-number">5.</span> <span class="nav-text">5. touch命令：创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-mkdir-%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">6.</span> <span class="nav-text">6. mkdir 命令：创建新文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-cp%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">7.</span> <span class="nav-text">7. cp命令：复制文件和文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-mv-%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%89%AA%E5%88%87%E7%B2%98%E8%B4%B4%E6%88%96%E9%87%8D%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">8.</span> <span class="nav-text">8. mv 命令：剪切粘贴或重命名文件和文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-rm%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">9.</span> <span class="nav-text">9. rm命令：删除文件和文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-nano%EF%BC%9A%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B6"><span class="nav-number">10.</span> <span class="nav-text">10.nano：编辑文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-clear%EF%BC%9A%E6%B8%85%E9%99%A4%E7%BB%88%E7%AB%AF%E5%B1%8F%E5%B9%95"><span class="nav-number">11.</span> <span class="nav-text">11.clear：清除终端屏幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-ps%EF%BC%9A%E6%9F%A5%E7%9C%8B%E5%B9%B6%E5%A4%84%E7%90%86%E8%BF%9B%E7%A8%8B"><span class="nav-number">12.</span> <span class="nav-text">12. ps：查看并处理进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E9%A1%B6%E9%83%A8%EF%BC%9A%E7%B3%BB%E7%BB%9F%E7%9B%91%E8%A7%86%E5%99%A8"><span class="nav-number">13.</span> <span class="nav-text">13.顶部：系统监视器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-lsblk%EF%BC%9A%E5%88%97%E5%87%BA%E7%A3%81%E7%9B%98%E5%92%8C%E5%88%86%E5%8C%BA"><span class="nav-number">14.</span> <span class="nav-text">14. lsblk：列出磁盘和分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-fdisk%EF%BC%9A%E5%88%97%E5%87%BA%E5%92%8C%E7%AE%A1%E7%90%86%E7%A3%81%E7%9B%98%E5%92%8C%E5%88%86%E5%8C%BA"><span class="nav-number">15.</span> <span class="nav-text">15. fdisk：列出和管理磁盘和分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-find%EF%BC%9A%E6%90%9C%E7%B4%A2%E6%96%87%E4%BB%B6"><span class="nav-number">16.</span> <span class="nav-text">16. find：搜索文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-grep%EF%BC%9A%E5%9C%A8%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E4%B8%AD%E6%90%9C%E7%B4%A2"><span class="nav-number">17.</span> <span class="nav-text">17. grep：在文件内容中搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-kill%EF%BC%9A%E7%BB%88%E6%AD%A2%E8%BF%9B%E7%A8%8B"><span class="nav-number">18.</span> <span class="nav-text">18.kill：终止进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-history%EF%BC%9A%E5%9B%9E%E9%A1%BE%E4%B8%80%E4%B8%8B%E4%BD%A0%E8%BF%87%E5%8E%BB%E8%BF%90%E8%A1%8C%E8%BF%87%E5%93%AA%E4%BA%9B%E5%91%BD%E4%BB%A4"><span class="nav-number">19.</span> <span class="nav-text">19.history：回顾一下你过去运行过哪些命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-chmod%EF%BC%9A%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="nav-number">20.</span> <span class="nav-text">20. chmod：更改文件权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21-lshw%EF%BC%9A%E8%8E%B7%E5%8F%96%E7%A1%AC%E4%BB%B6%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF"><span class="nav-number">21.</span> <span class="nav-text">21.lshw：获取硬件详细信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-sudo%EF%BC%9A%E4%BB%A5root%E6%9D%83%E9%99%90%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4"><span class="nav-number">22.</span> <span class="nav-text">22. sudo：以root权限运行命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-apt%EF%BC%9A%E5%AE%89%E8%A3%85%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E7%AE%A1%E7%90%86-deb%E5%8C%85"><span class="nav-number">23.</span> <span class="nav-text">23. apt：安装、删除和管理.deb包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-add-apt-repository%EF%BC%9A%E6%B7%BB%E5%8A%A0%E5%92%8C%E5%88%A0%E9%99%A4-PPA"><span class="nav-number">24.</span> <span class="nav-text">24. add-apt-repository：添加和删除 PPA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-snap%EF%BC%9A%E5%AE%89%E8%A3%85%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E7%AE%A1%E7%90%86snap%E5%8C%85"><span class="nav-number">25.</span> <span class="nav-text">25. snap：安装、删除和管理snap包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26-ip%EF%BC%9A%E6%9F%A5%E7%9C%8BIP%E5%9C%B0%E5%9D%80%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="nav-number">26.</span> <span class="nav-text">26. ip：查看IP地址等信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#27-ping%EF%BC%9A%E6%A3%80%E6%9F%A5%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F%E6%98%AF%E5%90%A6%E5%8F%AF%E8%BE%BE"><span class="nav-number">27.</span> <span class="nav-text">27. ping：检查远程系统是否可达</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#28-ssh%EF%BC%9A%E8%BF%9E%E6%8E%A5%E5%88%B0%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F"><span class="nav-number">28.</span> <span class="nav-text">28. ssh：连接到远程系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#29-scp%EF%BC%9A%E5%9C%A8%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F%E4%B9%8B%E9%97%B4%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6"><span class="nav-number">29.</span> <span class="nav-text">29. scp：在远程系统之间复制文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#30-exit%EF%BC%9A%E5%85%B3%E9%97%AD%E7%BB%88%E7%AB%AF"><span class="nav-number">30.</span> <span class="nav-text">30.exit：关闭终端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#31-shutdown%EF%BC%9A%E5%85%B3%E9%97%AD%E6%88%96%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8%E7%B3%BB%E7%BB%9F"><span class="nav-number">31.</span> <span class="nav-text">31. shutdown：关闭或重新启动系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%9D%E5%A4%96%E6%8F%90%E7%A4%BA%EF%BC%9Aman%EF%BC%9A%E8%AF%A6%E7%BB%86%E4%BA%86%E8%A7%A3%E5%91%BD%E4%BB%A4"><span class="nav-number">32.</span> <span class="nav-text">额外提示：man：详细了解命令</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -133,16 +159,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -156,13 +183,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
+      <meta itemprop="name" content="ubuntu基本命令 | Weicheng Gao's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">ubuntu基本命令</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          ubuntu基本命令
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -185,8 +212,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="1-ls命令：列出文件夹内容"><a href="#1-ls命令：列出文件夹内容" class="headerlink" title="1.ls命令：列出文件夹内容"></a>1.ls命令：列出文件夹内容</h3><p>这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。</p>
+    <div class="post-body" itemprop="articleBody"><h3 id="1-ls命令：列出文件夹内容"><a href="#1-ls命令：列出文件夹内容" class="headerlink" title="1.ls命令：列出文件夹内容"></a>1.ls命令：列出文件夹内容</h3><p>这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
 
 <iframe id="aswift_4" name="aswift_4" browsingtopics="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1200" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6366716774018597&amp;output=html&amp;h=280&amp;slotname=1482127509&amp;adk=2448454397&amp;adf=2738168491&amp;pi=t.ma~as.1482127509&amp;w=1200&amp;abgtt=6&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1722089359&amp;rafmt=1&amp;format=1200x280&amp;url=https%3A%2F%2Fcn.linux-console.net%2F%3Fp%3D17794&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuOC4wIiwieDg2IiwiIiwiMTI3LjAuMjY1MS43NCIsbnVsbCwwLG51bGwsIjY0IixbWyJOb3QpQTtCcmFuZCIsIjk5LjAuMC4wIl0sWyJNaWNyb3NvZnQgRWRnZSIsIjEyNy4wLjI2NTEuNzQiXSxbIkNocm9taXVtIiwiMTI3LjAuNjUzMy43MyJdXSwwXQ..&amp;dt=1722089072208&amp;bpp=1&amp;bdt=3049&amp;idt=26273&amp;shv=r20240724&amp;mjsv=m202407250101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8d19019e05d5c254%3AT%3D1721455014%3ART%3D1722089098%3AS%3DALNI_Mba7DZDA3IhpJEysdmalrFruaqT7g&amp;gpic=UID%3D00000e9c5ea832fe%3AT%3D1721455014%3ART%3D1722089098%3AS%3DALNI_Mawv_wawYQx-R29vnVgMMAi3bDSww&amp;eo_id_str=ID%3D358cf348cb64b3a5%3AT%3D1721455014%3ART%3D1722089098%3AS%3DAA-Afjbd8Sf28EpNazBXmCmQJwTu&amp;prev_fmts=0x0%2C1200x280%2C1200x200%2C1200x200%2C1831x968&amp;nras=2&amp;correlator=3402308821020&amp;frm=20&amp;pv=1&amp;ga_vid=814013480.1722089098&amp;ga_sid=1722089098&amp;ga_hid=1474323955&amp;ga_fc=0&amp;u_tz=480&amp;u_his=1&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1048&amp;u_aw=1854&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=306&amp;ady=1018&amp;biw=1831&amp;bih=968&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C31085513%2C44795922%2C95334527%2C95334828%2C95337026%2C95337868%2C95338251%2C31085643%2C95335246%2C31084186%2C95336267%2C31078663%2C31078668%2C31078670&amp;oid=2&amp;pvsid=1303933228414761&amp;tmod=1396322241&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fcn.bing.com%2F&amp;fc=1920&amp;brdim=66%2C32%2C66%2C32%2C1854%2C32%2C1854%2C1048%2C1846%2C968&amp;vis=1&amp;rsz=%7C%7CpEebr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=5&amp;uci=a!5&amp;btvi=1&amp;fsb=1&amp;dtd=M" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMnRyeSyx4cDFfrKFgUd4fQKeg" data-load-complete="true" style="box-sizing: border-box; left: 0px; top: 0px; border: 0px; width: 1200px; height: 0px;"></iframe>
@@ -447,7 +473,6 @@
 <p>对于新用户来说，理解联机帮助页可能会很困难，但它却非常方便。它为您提供命令选项的通用语法和描述。</p>
 <p>当您不确定如何使用某个命令时，请尝试先检查其手册页，然后再在互联网上搜索它。</p>
 
-      
     </div>
 
     
@@ -455,510 +480,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/07/27/liunx%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/" rel="prev" title="liunx文件权限">
+                  <i class="fa fa-angle-left"></i> liunx文件权限
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/27/liunx%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/27/liunx%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/" class="post-title-link" itemprop="url">liunx文件权限</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-07-27 20:48:33 / 修改时间：20:53:49" itemprop="dateCreated datePublished" datetime="2024-07-27T20:48:33+08:00">2024-07-27</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="查看linux文件的权限：ls-l-文件名称"><a href="#查看linux文件的权限：ls-l-文件名称" class="headerlink" title="查看linux文件的权限：ls -l 文件名称"></a>查看linux文件的权限：ls -l 文件名称</h3><h3 id="查看linux文件夹的权限：ls-ld-文件夹名称（所在目录）"><a href="#查看linux文件夹的权限：ls-ld-文件夹名称（所在目录）" class="headerlink" title="查看linux文件夹的权限：ls -ld 文件夹名称（所在目录）"></a>查看linux文件夹的权限：ls -ld 文件夹名称（所在目录）</h3><h3 id="修改文件及文件夹权限："><a href="#修改文件及文件夹权限：" class="headerlink" title="修改文件及文件夹权限："></a>修改文件及文件夹权限：</h3><h3 id="sudo-chmod-（代表类型）×××（所有者）×××（组用户）×××（其他用户）"><a href="#sudo-chmod-（代表类型）×××（所有者）×××（组用户）×××（其他用户）" class="headerlink" title="sudo chmod -（代表类型）×××（所有者）×××（组用户）×××（其他用户）"></a>sudo chmod -（代表类型）×××（所有者）×××（组用户）×××（其他用户）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 777 * -R    全部子目录及文件权限改为 777</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 600 ×××     只有所有者有读和写的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 644 ×××     所有者有读和写的权限，组用户只有读的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 700 ×××     只有所有者有读和写以及执行的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 666 ×××     每个人都有读和写的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 777 ×××     每个人都有读和写以及执行的权限</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/26/vim/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/26/vim/" class="post-title-link" itemprop="url">vim</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-26 20:57:41" itemprop="dateCreated datePublished" datetime="2024-07-26T20:57:41+08:00">2024-07-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-07-27 18:33:30" itemprop="dateModified" datetime="2024-07-27T18:33:30+08:00">2024-07-27</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch.gif" alt="img"></p>
-<h1 id="按键功能"><a href="#按键功能" class="headerlink" title="按键功能"></a>按键功能</h1><h2 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h2><p>h：左移一格</p>
-<p>l：右移一格</p>
-<p>j：上移一格</p>
-<p>k：下移一格</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/24/hexo%E6%95%99%E7%A8%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/24/hexo%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">hexo教程</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-24 16:44:31" itemprop="dateCreated datePublished" datetime="2024-07-24T16:44:31+08:00">2024-07-24</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-07-27 20:01:38" itemprop="dateModified" datetime="2024-07-27T20:01:38+08:00">2024-07-27</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>命令：</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>clean</td>
-<td>删除生成的文件和缓存</td>
-</tr>
-<tr>
-<td>config</td>
-<td>获取或设置配置</td>
-</tr>
-<tr>
-<td>deploy</td>
-<td>部署您的网站</td>
-</tr>
-<tr>
-<td>generate</td>
-<td>生成静态文件</td>
-</tr>
-<tr>
-<td>help</td>
-<td>获取命令帮助</td>
-</tr>
-<tr>
-<td>init</td>
-<td>创建一个新的Hexo文件夹</td>
-</tr>
-<tr>
-<td>list</td>
-<td>列出网站的信</td>
-</tr>
-<tr>
-<td>migrate</td>
-<td>将您的网站从其他系统迁移到Hexo</td>
-</tr>
-<tr>
-<td>new</td>
-<td>创建新帖子</td>
-</tr>
-<tr>
-<td>publish</td>
-<td>将草稿从_drafts移动到_posts文件夹</td>
-</tr>
-<tr>
-<td>render</td>
-<td>使用渲染器插件渲染文件</td>
-</tr>
-<tr>
-<td>server</td>
-<td>启动服务器</td>
-</tr>
-<tr>
-<td>version</td>
-<td>显示版本信息</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>全局选项：</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>–config</td>
-<td>指定配置文件，而不是使用_configure.yml</td>
-</tr>
-<tr>
-<td>–cwd</td>
-<td>指定cwd</td>
-</tr>
-<tr>
-<td>–debug</td>
-<td>在终端中显示所有详细消息</td>
-</tr>
-<tr>
-<td>–draft</td>
-<td>显示草稿帖子</td>
-</tr>
-<tr>
-<td>–safe</td>
-<td>禁用所有插件和脚本</td>
-</tr>
-<tr>
-<td>–silent</td>
-<td>隐藏控制台上的输出</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/24/hello/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/24/hello/" class="post-title-link" itemprop="url">hello</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-07-24 16:16:21 / 修改时间：16:16:44" itemprop="dateCreated datePublished" datetime="2024-07-24T16:16:21+08:00">2024-07-24</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/24/%E5%AE%89%E8%A3%85%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/24/%E5%AE%89%E8%A3%85%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">博客安装</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-24 16:16:21" itemprop="dateCreated datePublished" datetime="2024-07-24T16:16:21+08:00">2024-07-24</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-07-27 18:46:22" itemprop="dateModified" datetime="2024-07-27T18:46:22+08:00">2024-07-27</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="1-更新系统"><a href="#1-更新系统" class="headerlink" title="1.更新系统"></a>1.更新系统</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get upgrade</span><br><span class="line">shutdown -t 0</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2-5步-一码速通"><a href="#2-5步-一码速通" class="headerlink" title="2-5步 一码速通"></a>2-5步 一码速通</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install build-essential&amp;&amp;<span class="built_in">sudo</span> apt-get install npm&amp;&amp;npm config <span class="built_in">set</span> registry=https://registry.npmmirror.com&amp;&amp;<span class="built_in">sudo</span> npm install -g cnpm --registry=https://registry.npmmirror.com&amp;&amp;<span class="built_in">sudo</span> cnpm install -g hexo-cli&amp;&amp;<span class="built_in">cd</span> ~&amp;&amp;<span class="built_in">mkdir</span> Blog&amp;&amp;<span class="built_in">cd</span> Blog&amp;&amp;hexo init&amp;&amp;npm install&amp;&amp;npm install hexo-deployer-git --save&amp;&amp;hexo clean&amp;&amp;hexo g&amp;&amp;hexo s</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2-安装编译软件所必需的元包"><a href="#2-安装编译软件所必需的元包" class="headerlink" title="2.安装编译软件所必需的元包"></a>2.安装编译软件所必需的元包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install build-essential</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3-安装npm"><a href="#3-安装npm" class="headerlink" title="3.安装npm"></a>3.安装npm</h3><p>由于国内装不了npm，所以装cnpm</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install npm</span><br><span class="line">npm config <span class="built_in">set</span> registry=https://registry.npmmirror.com</span><br><span class="line"><span class="built_in">sudo</span> npm install -g cnpm --registry=https://registry.npmmirror.com</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="4-安装hexo"><a href="#4-安装hexo" class="headerlink" title="4.安装hexo"></a>4.安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="5-搭建本地Blog"><a href="#5-搭建本地Blog" class="headerlink" title="5.搭建本地Blog"></a>5.搭建本地Blog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="built_in">mkdir</span> Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="6-安装Git"><a href="#6-安装Git" class="headerlink" title="6.安装Git"></a>6.安装Git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install git</span><br><span class="line">git config --global user.name <span class="string">&quot;github的昵称&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;github的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="7-部署在Github"><a href="#7-部署在Github" class="headerlink" title="7.部署在Github"></a>7.部署在Github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh git@github.com</span><br></pre></td></tr></table></figure>
-
-<p>如果成功了，就会出现下面这个</p>
-<p>Hi smalldidi! You’ve successfully authenticated, but GitHub does not provide shell access.<br>Connection to github.com closed.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
