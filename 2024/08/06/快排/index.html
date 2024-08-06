@@ -19,29 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="按键功能上下左右h：左移一格 l：右移一格 j：上移一格 k：下移一格">
+    <meta name="description" content="排序算法快排算法12345678910void fastsort(int q[],int l,int r)&#123;    if(l&gt;&#x3D;r)return ;    int i&#x3D;l-1,j&#x3D;r+1,x&#x3D;q[i+j&gt;&gt;1];    while(i&lt;j)&#123;        do i++;while(q[i]&lt;x);        do j--;while(q[j]">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vim">
-<meta property="og:url" content="http://example.com/2024/07/26/vim/index.html">
+<meta property="og:title" content="快排">
+<meta property="og:url" content="http://example.com/2024/08/06/%E5%BF%AB%E6%8E%92/index.html">
 <meta property="og:site_name" content="Weicheng Gao&#39;s Blog">
-<meta property="og:description" content="按键功能上下左右h：左移一格 l：右移一格 j：上移一格 k：下移一格">
+<meta property="og:description" content="排序算法快排算法12345678910void fastsort(int q[],int l,int r)&#123;    if(l&gt;&#x3D;r)return ;    int i&#x3D;l-1,j&#x3D;r+1,x&#x3D;q[i+j&gt;&gt;1];    while(i&lt;j)&#123;        do i++;while(q[i]&lt;x);        do j--;while(q[j]">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch.gif">
-<meta property="article:published_time" content="2024-07-26T12:57:41.000Z">
-<meta property="article:modified_time" content="2024-07-27T10:33:30.538Z">
+<meta property="article:published_time" content="2024-08-06T07:51:16.000Z">
+<meta property="article:modified_time" content="2024-08-06T08:20:10.964Z">
 <meta property="article:author" content="Weicheng Gao">
+<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch.gif">
 
 
-<link rel="canonical" href="http://example.com/2024/07/26/vim/">
+<link rel="canonical" href="http://example.com/2024/08/06/%E5%BF%AB%E6%8E%92/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/07/26/vim/","path":"2024/07/26/vim/","title":"vim"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/08/06/%E5%BF%AB%E6%8E%92/","path":"2024/08/06/快排/","title":"快排"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>vim | Weicheng Gao's Blog</title>
+<title>快排 | Weicheng Gao's Blog</title>
   
 
 
@@ -106,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8C%89%E9%94%AE%E5%8A%9F%E8%83%BD"><span class="nav-number">1.</span> <span class="nav-text">按键功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8A%E4%B8%8B%E5%B7%A6%E5%8F%B3"><span class="nav-number">1.1.</span> <span class="nav-text">上下左右</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">排序算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E6%8E%92%E7%AE%97%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">快排算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BD%92%E5%B9%B6%E7%AE%97%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">归并算法</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -151,7 +150,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/26/vim/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/06/%E5%BF%AB%E6%8E%92/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -164,12 +163,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="vim | Weicheng Gao's Blog">
+      <meta itemprop="name" content="快排 | Weicheng Gao's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          vim
+          快排
         </h1>
 
         <div class="post-meta-container">
@@ -179,15 +178,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2024-07-26 20:57:41" itemprop="dateCreated datePublished" datetime="2024-07-26T20:57:41+08:00">2024-07-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-07-27 18:33:30" itemprop="dateModified" datetime="2024-07-27T18:33:30+08:00">2024-07-27</time>
+      <time title="创建时间：2024-08-06 15:51:16 / 修改时间：16:20:10" itemprop="dateCreated datePublished" datetime="2024-08-06T15:51:16+08:00">2024-08-06</time>
     </span>
 
   
@@ -199,11 +192,12 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p><img src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch.gif" alt="img"></p>
-<h1 id="按键功能"><a href="#按键功能" class="headerlink" title="按键功能"></a>按键功能</h1><h2 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h2><p>h：左移一格</p>
-<p>l：右移一格</p>
-<p>j：上移一格</p>
-<p>k：下移一格</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><h3 id="快排算法"><a href="#快排算法" class="headerlink" title="快排算法"></a>快排算法</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">fastsort</span><span class="params">(<span class="type">int</span> q[],<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;=r)<span class="keyword">return</span> ;</span><br><span class="line">    <span class="type">int</span> i=l<span class="number">-1</span>,j=r<span class="number">+1</span>,x=q[i+j&gt;&gt;<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(i&lt;j)&#123;</span><br><span class="line">        <span class="keyword">do</span> i++;<span class="keyword">while</span>(q[i]&lt;x);</span><br><span class="line">        <span class="keyword">do</span> j--;<span class="keyword">while</span>(q[j]&gt;x);</span><br><span class="line">        <span class="keyword">if</span>(i&lt;j)<span class="built_in">swap</span>(q[i],q[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fastsort</span>(q,l,j),<span class="built_in">fastsort</span>(q,j<span class="number">+1</span>,r);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="归并算法"><a href="#归并算法" class="headerlink" title="归并算法"></a>归并算法</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -212,19 +206,19 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C/" rel="tag"># C++</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/07/24/hexo%E6%95%99%E7%A8%8B/" rel="prev" title="hexo教程">
-                  <i class="fa fa-angle-left"></i> hexo教程
+                <a href="/2024/07/28/C++%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" rel="prev" title="C++基础语法">
+                  <i class="fa fa-angle-left"></i> C++基础语法
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/07/27/liunx%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/" rel="next" title="liunx文件权限">
-                  liunx文件权限 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
