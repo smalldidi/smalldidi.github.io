@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="蓝牙连接双系统1.先两个系统都有连接过2.确保windows能正常连接3.切换到ubuntu系统4.下载chntpw和vim12sudo apt install chntpwsudo apt install vim    5.找到windows的C盘6.在C盘目录打开终端 进入config文件1cd Windows&#x2F;System32&#x2F;config&#x2F;    7.使用刚刚安装的软件1chntpw -e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="双系统蓝牙连接">
+<meta property="og:url" content="http://example.com/2024/08/18/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/index.html">
+<meta property="og:site_name" content="Weicheng Gao&#39;s Blog">
+<meta property="og:description" content="蓝牙连接双系统1.先两个系统都有连接过2.确保windows能正常连接3.切换到ubuntu系统4.下载chntpw和vim12sudo apt install chntpwsudo apt install vim    5.找到windows的C盘6.在C盘目录打开终端 进入config文件1cd Windows&#x2F;System32&#x2F;config&#x2F;    7.使用刚刚安装的软件1chntpw -e">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-08-18T11:21:01.000Z">
+<meta property="article:modified_time" content="2024-08-19T02:07:08.000Z">
+<meta property="article:author" content="Weicheng Gao">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2024/08/18/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/08/18/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/","path":"2024/08/18/双系统蓝牙连接/","title":"双系统蓝牙连接"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>双系统蓝牙连接 | Weicheng Gao's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Weicheng Gao's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5%E5%8F%8C%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.</span> <span class="nav-text">蓝牙连接双系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%85%88%E4%B8%A4%E4%B8%AA%E7%B3%BB%E7%BB%9F%E9%83%BD%E6%9C%89%E8%BF%9E%E6%8E%A5%E8%BF%87"><span class="nav-number">1.1.</span> <span class="nav-text">1.先两个系统都有连接过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%A1%AE%E4%BF%9Dwindows%E8%83%BD%E6%AD%A3%E5%B8%B8%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.2.</span> <span class="nav-text">2.确保windows能正常连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%87%E6%8D%A2%E5%88%B0ubuntu%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.3.</span> <span class="nav-text">3.切换到ubuntu系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E4%B8%8B%E8%BD%BDchntpw%E5%92%8Cvim"><span class="nav-number">1.4.</span> <span class="nav-text">4.下载chntpw和vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%89%BE%E5%88%B0windows%E7%9A%84C%E7%9B%98"><span class="nav-number">1.5.</span> <span class="nav-text">5.找到windows的C盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%9C%A8C%E7%9B%98%E7%9B%AE%E5%BD%95%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF-%E8%BF%9B%E5%85%A5config%E6%96%87%E4%BB%B6"><span class="nav-number">1.6.</span> <span class="nav-text">6.在C盘目录打开终端 进入config文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E4%BD%BF%E7%94%A8%E5%88%9A%E5%88%9A%E5%AE%89%E8%A3%85%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="nav-number">1.7.</span> <span class="nav-text">7.使用刚刚安装的软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E8%BF%9B%E5%85%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="nav-number">1.8.</span> <span class="nav-text">8.进入蓝牙设备的目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E6%89%BE%E5%88%B0%E4%BD%A0%E8%A6%81%E8%BF%9E%E6%8E%A5%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E5%9C%B0%E5%9D%80"><span class="nav-number">1.9.</span> <span class="nav-text">9.找到你要连接双系统的蓝牙设备地址</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.9.1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE-%E8%93%9D%E7%89%99-%E7%82%B9%E5%87%BB%E4%BD%A0%E8%A6%81%E8%BF%9E%E6%8E%A5%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%9C%B0%E5%9D%80"><span class="nav-number">1.9.2.</span> <span class="nav-text">1..进入设置 蓝牙 点击你要连接双系统的蓝牙设备 查看地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%9B%9E%E5%88%B0%E7%BB%88%E7%AB%AF-%E6%9F%A5%E7%9C%8Bvalue-name%E9%87%8C%E9%9D%A2%E5%92%8C%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E5%9C%B0%E5%9D%80-%E5%B9%B6%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5"><span class="nav-number">1.9.3.</span> <span class="nav-text">2..回到终端 查看value name里面和蓝牙设备相同的地址 并复制下来</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%E6%9F%A5%E7%9C%8B%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84link-key"><span class="nav-number">1.10.</span> <span class="nav-text">10.查看蓝牙设备的link key</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E7%9A%84%E6%98%AF"><span class="nav-number">1.10.1.</span> <span class="nav-text">输出的是</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#link-key%E6%98%AF"><span class="nav-number">1.10.2.</span> <span class="nav-text">link key是</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E8%BF%9B%E5%85%A5ubuntu%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%93%9D%E7%89%99%E7%9B%AE%E5%BD%95"><span class="nav-number">1.11.</span> <span class="nav-text">11.进入ubuntu系统的蓝牙目录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%8D%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BB%88%E7%AB%AF"><span class="nav-number">1.11.1.</span> <span class="nav-text">再新建一个终端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-%E8%BF%9B%E5%85%A5%E4%BD%A0%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="nav-number">1.12.</span> <span class="nav-text">12.进入你的蓝牙设备的目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E4%BF%AE%E6%94%B9ubuntu%E7%9A%84link-key%E5%9C%B0%E5%9D%80%E4%B8%BAwindows%E7%9A%84link-key%E5%9C%B0%E5%9D%80"><span class="nav-number">1.13.</span> <span class="nav-text">13.修改ubuntu的link key地址为windows的link key地址</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%89%BE%E5%88%B0-LinkKey"><span class="nav-number">1.13.1.</span> <span class="nav-text">1.找到[LinkKey]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E4%B8%8B%E9%9D%A2%E6%9C%89%E4%B8%AA-key"><span class="nav-number">1.13.2.</span> <span class="nav-text">2.下面有个 key&#x3D;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E6%8A%8A-%E5%90%8E%E9%9D%A2%E7%9A%8432%E4%BD%8Dlinkkey%E5%9C%B0%E5%9D%80%E5%85%A8%E5%88%A0%E9%99%A4"><span class="nav-number">1.13.3.</span> <span class="nav-text">3.把&#x3D;后面的32位linkkey地址全删除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E6%9B%BF%E6%8D%A2%E6%88%90%E7%AC%AC10%E6%AD%A5%E4%BD%A0%E5%A4%8D%E5%88%B6%E7%9A%84windows%E7%9A%84link-key%E5%9C%B0%E5%9D%80"><span class="nav-number">1.13.4.</span> <span class="nav-text">4.替换成第10步你复制的windows的link key地址</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-%E9%87%8D%E5%90%AF%E4%BD%A0%E7%9A%84%E7%94%B5%E8%84%91%E5%92%8C%E8%93%9D%E7%89%99"><span class="nav-number">1.14.</span> <span class="nav-text">14.重启你的电脑和蓝牙</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Weicheng Gao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/18/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Weicheng Gao">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weicheng Gao's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="双系统蓝牙连接 | Weicheng Gao's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          双系统蓝牙连接
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-08-18 19:21:01" itemprop="dateCreated datePublished" datetime="2024-08-18T19:21:01+08:00">2024-08-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-08-19 10:07:08" itemprop="dateModified" datetime="2024-08-19T10:07:08+08:00">2024-08-19</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="蓝牙连接双系统"><a href="#蓝牙连接双系统" class="headerlink" title="蓝牙连接双系统"></a>蓝牙连接双系统</h2><h3 id="1-先两个系统都有连接过"><a href="#1-先两个系统都有连接过" class="headerlink" title="1.先两个系统都有连接过"></a>1.先两个系统都有连接过</h3><h3 id="2-确保windows能正常连接"><a href="#2-确保windows能正常连接" class="headerlink" title="2.确保windows能正常连接"></a>2.确保windows能正常连接</h3><h3 id="3-切换到ubuntu系统"><a href="#3-切换到ubuntu系统" class="headerlink" title="3.切换到ubuntu系统"></a>3.切换到ubuntu系统</h3><h3 id="4-下载chntpw和vim"><a href="#4-下载chntpw和vim" class="headerlink" title="4.下载chntpw和vim"></a>4.下载chntpw和vim</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install chntpw</span><br><span class="line"><span class="built_in">sudo</span> apt install vim</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5-找到windows的C盘"><a href="#5-找到windows的C盘" class="headerlink" title="5.找到windows的C盘"></a>5.找到windows的C盘</h3><h3 id="6-在C盘目录打开终端-进入config文件"><a href="#6-在C盘目录打开终端-进入config文件" class="headerlink" title="6.在C盘目录打开终端 进入config文件"></a>6.在C盘目录打开终端 进入config文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Windows/System32/config/</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="7-使用刚刚安装的软件"><a href="#7-使用刚刚安装的软件" class="headerlink" title="7.使用刚刚安装的软件"></a>7.使用刚刚安装的软件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chntpw -e SYSTEM</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="8-进入蓝牙设备的目录"><a href="#8-进入蓝牙设备的目录" class="headerlink" title="8.进入蓝牙设备的目录"></a>8.进入蓝牙设备的目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> \ControlSet001\Services\BTHPORT\Parameters\Keys</span><br><span class="line"><span class="built_in">ls</span>		//查看key name</span><br><span class="line"><span class="built_in">cd</span> &lt;<span class="built_in">link</span> key&gt;		//把你的<span class="built_in">link</span> key替换掉&lt;<span class="built_in">link</span> key&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="9-找到你要连接双系统的蓝牙设备地址"><a href="#9-找到你要连接双系统的蓝牙设备地址" class="headerlink" title="9.找到你要连接双系统的蓝牙设备地址"></a>9.找到你要连接双系统的蓝牙设备地址</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="1-进入设置-蓝牙-点击你要连接双系统的蓝牙设备-查看地址"><a href="#1-进入设置-蓝牙-点击你要连接双系统的蓝牙设备-查看地址" class="headerlink" title="1..进入设置 蓝牙 点击你要连接双系统的蓝牙设备 查看地址"></a>1..进入设置 蓝牙 点击你要连接双系统的蓝牙设备 查看地址</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">34:88:5D:3E:FC:87		//我的地址</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-回到终端-查看value-name里面和蓝牙设备相同的地址-并复制下来"><a href="#2-回到终端-查看value-name里面和蓝牙设备相同的地址-并复制下来" class="headerlink" title="2..回到终端 查看value name里面和蓝牙设备相同的地址 并复制下来"></a>2..回到终端 查看value name里面和蓝牙设备相同的地址 并复制下来</h4><h3 id="10-查看蓝牙设备的link-key"><a href="#10-查看蓝牙设备的link-key" class="headerlink" title="10.查看蓝牙设备的link key"></a>10.查看蓝牙设备的link key</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hex &lt;你蓝牙的<span class="built_in">link</span> key&gt;		//把你蓝牙的<span class="built_in">link</span> key替换掉&lt;你蓝牙的<span class="built_in">link</span> key&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="输出的是"><a href="#输出的是" class="headerlink" title="输出的是"></a>输出的是</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Value &lt;34885d3efc87&gt; of type REG_BINARY (3), data length 16 [0x10]</span><br><span class="line">:00000  E1 7E CD 8D 62 3F 81 51 04 7C 59 52 6E B1 8B AC .~..b?.Q.|YRn...</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="link-key是"><a href="#link-key是" class="headerlink" title="link key是"></a>link key是</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">E1 7E CD 8D 62 3F 81 51 04 7C 59 52 6E B1 8B AC		//要把得到的link key的空格删除</span><br><span class="line">E17ECD8D623F8151047C59526EB18BAC	//记住!记住!记住!复制下来 不要复制上一行 复制这一行 </span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="11-进入ubuntu系统的蓝牙目录"><a href="#11-进入ubuntu系统的蓝牙目录" class="headerlink" title="11.进入ubuntu系统的蓝牙目录"></a>11.进入ubuntu系统的蓝牙目录</h3><h4 id="再新建一个终端"><a href="#再新建一个终端" class="headerlink" title="再新建一个终端"></a>再新建一个终端</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su		//提权</span><br><span class="line"><span class="built_in">cd</span> ~&amp;&amp;<span class="built_in">cd</span> ..&amp;&amp;<span class="built_in">cd</span> ..&amp;&amp;<span class="built_in">cd</span> var/lib/bluetooth</span><br><span class="line"><span class="built_in">ls</span>		//查看系统的mac地址</span><br><span class="line"><span class="built_in">cd</span> &lt;系统的mac地址&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="12-进入你的蓝牙设备的目录"><a href="#12-进入你的蓝牙设备的目录" class="headerlink" title="12.进入你的蓝牙设备的目录"></a>12.进入你的蓝牙设备的目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;你蓝牙设备的地址&gt;		//把你蓝牙设备的地址替换掉&lt;你蓝牙的地址&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="13-修改ubuntu的link-key地址为windows的link-key地址"><a href="#13-修改ubuntu的link-key地址为windows的link-key地址" class="headerlink" title="13.修改ubuntu的link key地址为windows的link key地址"></a>13.修改ubuntu的link key地址为windows的link key地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim info</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-找到-LinkKey"><a href="#1-找到-LinkKey" class="headerlink" title="1.找到[LinkKey]"></a>1.找到[LinkKey]</h4><h4 id="2-下面有个-key"><a href="#2-下面有个-key" class="headerlink" title="2.下面有个 key&#x3D;"></a>2.下面有个 key&#x3D;</h4><h4 id="3-把-后面的32位linkkey地址全删除"><a href="#3-把-后面的32位linkkey地址全删除" class="headerlink" title="3.把&#x3D;后面的32位linkkey地址全删除"></a>3.把&#x3D;后面的32位linkkey地址全删除</h4><h4 id="4-替换成第10步你复制的windows的link-key地址"><a href="#4-替换成第10步你复制的windows的link-key地址" class="headerlink" title="4.替换成第10步你复制的windows的link key地址"></a>4.替换成第10步你复制的windows的link key地址</h4><h3 id="14-重启你的电脑和蓝牙"><a href="#14-重启你的电脑和蓝牙" class="headerlink" title="14.重启你的电脑和蓝牙"></a>14.重启你的电脑和蓝牙</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown -r now</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/08/10/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/" rel="prev" title="二分算法">
+                  <i class="fa fa-angle-left"></i> 二分算法
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/08/21/liunx%E5%88%9B%E5%BB%BA%E9%9A%90%E8%97%8F%E7%94%A8%E6%88%B7/" rel="next" title="liunx创建隐藏用户">
+                  liunx创建隐藏用户 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Weicheng Gao</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
